@@ -4,7 +4,7 @@ import { AppDataSource } from './db';
 const PORT = 4000;
 async function main() {
   try {
-    await AppDataSource.initialize();
+    // await AppDataSource.initialize();
     app.listen(PORT);
     console.log(`server listening on port ${PORT}`);
   } catch (error) {

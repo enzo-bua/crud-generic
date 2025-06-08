@@ -5,6 +5,9 @@ const path = '/items';
 const items = Router();
 const controllers = ItemsController();
 
+items.get(`${path}`, (_, res) => {
+  res.send('ok');
+});
 items.post(`${path}/create`, controllers.createItems);
 items.get(`${path}/`, controllers.getAll);
 items.get(`${path}/:id`, controllers.getById);
